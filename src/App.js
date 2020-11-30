@@ -6,7 +6,10 @@ import useStudentsData from "./useStudentsData";
 // import pd-fake-data.json from "./pd-fake-data.json"
 
 const PDTracker = () => {
+  //Student Data from server
   const [students] = useStudentsData();
+
+  //Table Columns
   const columns = [
     {
       title: "#",

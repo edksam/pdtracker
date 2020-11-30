@@ -5,7 +5,7 @@ const useStudentsdData = () => {
   //   const [hasError, setErrors] = useState(false);
   const [students, setStudents] = useState([]);
 
-  //Fetch Data
+  //Fetch Data from Server
   async function fetchStudents() {
     const res = await fetch("https://ontrack-team3.herokuapp.com/pd/students/");
     res.json().then((res) => setStudents(res));
